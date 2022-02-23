@@ -12,6 +12,7 @@ Router.route("/login").post(userController.authenticateUser);
 
 Router.route("/:id").get(userController.getUser);
 
-Router.route("/chat/:currentUserID/:otherUserID").get(chatController.getChat);
+Router.route("/chat/:chatID").get(chatController.getChat);
+Router.route("/chat/").post(chatController.createChat);
 
 module.exports = Router;

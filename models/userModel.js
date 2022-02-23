@@ -36,7 +36,7 @@ const usersSchema = new mongoose.Schema({
       message: "gender must be male,female or other 😑",
     },
   },
-  chatMembers: [String],
+  chatMembers: [Array],
 });
 
 //User Model---------------------------------------------------------------
